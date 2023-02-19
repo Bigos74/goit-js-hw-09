@@ -1,0 +1,9 @@
+.input {
+  border: 1px solid rgb(10, 164, 236);
+}
+.input.valid {
+  border: 1px solid rgb(29, 236, 10);
+}
+.input.invalid {
+  border: 1px solid rgb(217, 12, 47);
+}

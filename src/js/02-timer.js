@@ -28,9 +28,13 @@ const options = {
     if (selectedDates < Date.now()) {
       Notiflix.Notify.failure('Please choose a date in the future');
       startBtn.setAttribute('disabled', true);
+      dateInput.classList.remove('valid');
+      dateInput.classList.add('invalid');
     } else {
       chosenDate = selectedDates;
       startBtn.removeAttribute('disabled');
+      dateInput.classList.remove('invalid');
+      dateInput.classList.add('valid');
     }
   },
 };

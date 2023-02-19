@@ -28,8 +28,8 @@ function handleButtonBehavior() {
   if (activeBtn === 'stop') {
     clearInterval(intervalId);
     BUTTONS_UI.activeBtn = 'start';
-    btn.classList.add(BUTTONS_UI.start.class);
-    btn.classList.remove(BUTTONS_UI.stop.class);
+    btn.classList.add(true);
+    btn.classList.remove(false);
     btn.textContent = BUTTONS_UI.start.text;
   } else if (activeBtn === 'start') {
     intervalId = setInterval(addColor, 1000);
